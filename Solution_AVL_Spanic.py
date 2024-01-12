@@ -84,11 +84,10 @@ class GraphPlotter:
         while True:
             channel_choose = input("For choosing channel 'Crank angle' press '+': ")
             if channel_choose == "+":
+                self.crank_angle = True
                 break
             else:
                 print("Invalid input. Please enter +")
-
-        self.crank_angle = True
 
         while True:
             user_input = input("Hi user :). Please press a, b, c for the type of diagram you want: a) Flow mass @3500 RPM, b) Flow mass @3750 RPM, c) Average Flow mass: ")
